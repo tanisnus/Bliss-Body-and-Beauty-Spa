@@ -11,5 +11,23 @@
 }
 
 .scrub-detail-div{
-    padding-left: 400px;
+    padding-left: 300px;
+}
+
+.scrub-detail-title-div{
+    text-align: center;
+}
+
+
+.scrub-detail-bulletpoint-div{
+    padding-left: 70;
+    padding-right: 80px;
+    
+}
+
+.scrub-detail-bulletpoint-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
 }
