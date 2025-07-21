@@ -1,0 +1,15 @@
+.service-div{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.scrub-image{
+    width: 300px;
+    height: 300px;
+    padding-left: 200px;
+}
+
+.scrub-detail-div{
+    padding-left: 400px;
+}
