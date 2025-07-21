@@ -16,15 +16,15 @@ export default function Header() {
 
             <ul className='header-list'>
                 <li className='header-list-item'>
-                    <Link> Services</Link>
+                    <Link className='header-each-link'> Services</Link>
                 </li>
 
                 <li className='header-list-item'>
-                    <Link> About Us</Link>
+                    <Link className='header-each-link'> About Us</Link>
                 </li>
 
                 <li className='header-list-item'>
-                    <Link> Contact</Link>
+                    <Link className='header-each-link'> Contact</Link>
                 </li>
 
             </ul>

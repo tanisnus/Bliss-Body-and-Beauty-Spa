@@ -11,7 +11,8 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     max-width: 1400px;
     margin: 0 auto;
-    background-color: #d9e4c9;
+    /* background-color: #d9e4c9; */
+    background-color: #f8e1e7;
 }
 
 
@@ -26,11 +27,18 @@
     list-style: none;
 }
 
-.header-list-item a{
+/* .header-list-item a{
     text-decoration: none;
+} */
+
+.header-each-link{
+    text-decoration: none;
+    color: #4f5ca8;
 }
 
-
+.header-each-link:hover{
+    color: #a1be48;
+}
 
 
 
