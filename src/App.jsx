@@ -20,7 +20,6 @@ function App() {
           <Routes>
             <Route path='/pages/Service.jsx' element={<Service />} />     
 
-
           </Routes>
         </section>
 

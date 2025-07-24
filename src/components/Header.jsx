@@ -16,6 +16,7 @@ export default function Header() {
 
             <ul className='header-list'>
                 <li className='header-list-item'>
+                    {/* to='/pages/Service.jsx' */}
                     <Link className='header-each-link' to='/pages/Service.jsx'> Services</Link>
                 </li>
 
