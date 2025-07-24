@@ -21,17 +21,61 @@ const bull = (
         
     </Box>
 );
-  
-  const card = (
+
+
+
+// Pricing card for 30 mins
+  const first_price_card = (
     <React.Fragment>
       <CardContent>
         
-        <Typography variant="h5" component="div" sx={{ mb: 5 }}>
+        <Typography variant="h6" component="div" sx={{ mb: 3 }}>
         ⏰ 30 mins
         </Typography>
         
-        <Typography variant="h5" component="div">
+        <Typography variant="h6" component="div" align="center">
            $60{bull}
+        </Typography>
+
+      </CardContent>
+
+
+    </React.Fragment>
+  );
+
+
+  // Pricing card for 60 mins
+  const second_price_card = (
+    <React.Fragment>
+      <CardContent>
+        
+        <Typography variant="h6" component="div" sx={{ mb: 3 }}>
+        ⏰ 60 mins
+        </Typography>
+        
+        <Typography variant="h6" component="div" align="center">
+           $110{bull}
+        </Typography>
+
+      </CardContent>
+
+
+    </React.Fragment>
+  );
+
+
+
+  // Pricing card for 90 mins
+  const third_price_card = (
+    <React.Fragment>
+      <CardContent>
+        
+        <Typography variant="h6" component="div" sx={{ mb: 3 }}>
+        ⏰ 90 mins
+        </Typography>
+        
+        <Typography variant="h6" component="div" align="center">
+           $160{bull}
         </Typography>
 
       </CardContent>
@@ -64,7 +108,15 @@ export default function Service() {
 
                 <div className='scrub-detail-pricing-div'>
                     <Box sx={{ Width: 200 }}>
-                        <Card variant="outlined">{card}</Card>
+                        <Card variant="outlined">{first_price_card}</Card>
+                    </Box>
+
+                    <Box sx={{ Width: 200 }}>
+                        <Card variant="outlined">{second_price_card}</Card>
+                    </Box>
+
+                    <Box sx={{ Width: 200 }}>
+                        <Card variant="outlined">{third_price_card}</Card>
                     </Box>
                 </div>
 

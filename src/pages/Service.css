@@ -1,6 +1,7 @@
 .service-div{
     display: flex;
     flex-direction: row;
+    background-color: #E6F4EA;
 
 }
 
@@ -8,6 +9,8 @@
     width: 300px;
     height: 300px;
     padding-left: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .scrub-detail-div{
@@ -22,6 +25,7 @@
 .scrub-detail-bulletpoint-div{
     padding-left: 70;
     padding-right: 80px;
+    padding-bottom: 20px;
     
 }
 
@@ -33,5 +37,7 @@
 }
 
 .scrub-detail-pricing-div{
-    width: 200px;
+    width: 700px;
+    display: flex;
+    gap: 50px;
 }
