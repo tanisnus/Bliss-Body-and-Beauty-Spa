@@ -29,11 +29,11 @@ const bull = (
     <React.Fragment>
       <CardContent>
         
-        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16  }}>
+        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16, fontFamily: 'Poppins'  }}>
         ⏰ 30 mins
         </Typography>
         
-        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 510 }}>
+        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 500, fontFamily: 'Poppins' }}>
            $60{bull}
         </Typography>
 
@@ -49,11 +49,11 @@ const bull = (
     <React.Fragment>
       <CardContent>
         
-        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16  }}>
+        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16, fontFamily: 'Poppins'  }}>
         ⏰ 60 mins
         </Typography>
         
-        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 510  }}>
+        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 500, fontFamily: 'Poppins'  }}>
            $110{bull}
         </Typography>
 
@@ -70,11 +70,11 @@ const bull = (
     <React.Fragment>
       <CardContent>
         
-        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16 }}>
+        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16, fontFamily: 'Poppins' }}>
         ⏰ 90 mins
         </Typography>
         
-        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 510  }}>
+        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 500, fontFamily: 'Poppins' }}>
            $160{bull}
         </Typography>
 
@@ -108,17 +108,17 @@ export default function Service() {
 
                 <div className='scrub-detail-pricing-div'>
                     <Box sx={{ Width: 200 }}>
-                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF' }}>{first_price_card}</Card>
+                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{first_price_card}</Card>
                     </Box>
 
                     <Box sx={{ Width: 200 }}>
                         {/* <Card variant="outlined"> {second_price_card}</Card> */}
-                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF' }}>{second_price_card}</Card>
+                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{second_price_card}</Card>
 
                     </Box>
 
                     <Box sx={{ Width: 200 }}>
-                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF' }}>{third_price_card}</Card>
+                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{third_price_card}</Card>
                     </Box>
                 </div>
 
