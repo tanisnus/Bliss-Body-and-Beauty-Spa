@@ -29,11 +29,11 @@ const bull = (
     <React.Fragment>
       <CardContent>
         
-        <Typography variant="h6" component="div" sx={{ mb: 3 }}>
+        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16  }}>
         ⏰ 30 mins
         </Typography>
         
-        <Typography variant="h6" component="div" align="center">
+        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 510 }}>
            $60{bull}
         </Typography>
 
@@ -49,11 +49,11 @@ const bull = (
     <React.Fragment>
       <CardContent>
         
-        <Typography variant="h6" component="div" sx={{ mb: 3 }}>
+        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16  }}>
         ⏰ 60 mins
         </Typography>
         
-        <Typography variant="h6" component="div" align="center">
+        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 510  }}>
            $110{bull}
         </Typography>
 
@@ -70,11 +70,11 @@ const bull = (
     <React.Fragment>
       <CardContent>
         
-        <Typography variant="h6" component="div" sx={{ mb: 3 }}>
+        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16 }}>
         ⏰ 90 mins
         </Typography>
         
-        <Typography variant="h6" component="div" align="center">
+        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 510  }}>
            $160{bull}
         </Typography>
 
@@ -96,11 +96,11 @@ export default function Service() {
 
                 <div className='scrub-detail-bulletpoint-div'>
                     <ul className='scrub-detail-bulletpoint-list'>
-                        <li> Unscented Salt Scrub </li>
-                        <li> Green Tea & Peppermint Salt Scrub</li>
-                        <li> Unscented Brown sugar scrub </li>
-                        <li> French Vanilla Latte Organic Brown Sugar Scrub </li>
-                        <li> Vanilla Orange Brown Sugar Scrub </li>
+                        <li className='scrub-detail-bulletpoint-list-item'> Unscented Salt Scrub </li>
+                        <li className='scrub-detail-bulletpoint-list-item'> Green Tea & Peppermint Salt Scrub</li>
+                        <li className='scrub-detail-bulletpoint-list-item'> Unscented Brown sugar scrub </li>
+                        <li className='scrub-detail-bulletpoint-list-item'> French Vanilla Latte Organic Brown Sugar Scrub </li>
+                        <li className='scrub-detail-bulletpoint-list-item'> Vanilla Orange Brown Sugar Scrub </li>
                     </ul>
                 </div>
 
@@ -108,19 +108,27 @@ export default function Service() {
 
                 <div className='scrub-detail-pricing-div'>
                     <Box sx={{ Width: 200 }}>
-                        <Card variant="outlined">{first_price_card}</Card>
+                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF' }}>{first_price_card}</Card>
                     </Box>
 
                     <Box sx={{ Width: 200 }}>
-                        <Card variant="outlined">{second_price_card}</Card>
+                        {/* <Card variant="outlined"> {second_price_card}</Card> */}
+                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF' }}>{second_price_card}</Card>
+
                     </Box>
 
                     <Box sx={{ Width: 200 }}>
-                        <Card variant="outlined">{third_price_card}</Card>
+                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF' }}>{third_price_card}</Card>
                     </Box>
                 </div>
 
             </div>
+
         </div>
+
+
+
+
+
     )
 }
