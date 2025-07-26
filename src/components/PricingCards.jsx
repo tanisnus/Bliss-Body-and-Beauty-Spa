@@ -185,3 +185,60 @@ const bull = (
             </CardContent>
         </React.Fragment>
     );
+
+
+
+
+
+{/* 5th Service Section - Facial */}
+
+
+
+
+
+{/* 6th Service Section - Massage */}
+  export const MassageFirstPriceCard = (
+    <React.Fragment>
+
+        <CardContent>
+            <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 17, fontFamily: 'Poppins'  }}>
+            ⏰ 60 mins
+            </Typography>
+            
+            <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 500, fontFamily: 'Poppins' }}>
+            $95{bull}
+            </Typography>
+        </CardContent>
+
+
+    </React.Fragment>
+  );
+
+  export const MassageSecondPriceCard = (
+    <React.Fragment>
+        <CardContent>
+            <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 17, fontFamily: 'Poppins'  }}>
+            ⏰ 90 mins
+            </Typography>
+            
+            <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 500, fontFamily: 'Poppins' }}>
+            $135{bull}
+            </Typography>
+        </CardContent>
+    </React.Fragment>
+  );
+
+
+  export const MassageThirdPriceCard = (
+    <React.Fragment>
+        <CardContent>
+            <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 17, fontFamily: 'Poppins'  }}>
+            ⏰ 120 mins
+            </Typography>
+            
+            <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 500, fontFamily: 'Poppins' }}>
+            $175{bull}
+            </Typography>
+        </CardContent>
+    </React.Fragment>
+  );

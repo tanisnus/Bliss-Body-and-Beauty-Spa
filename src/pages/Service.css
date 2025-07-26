@@ -69,7 +69,7 @@
 
 
 /* 2nd Service */
-.second-service-div, .forth-service-div{
+.second-service-div, .forth-service-div, .sixth-service-div{
     display: flex;
     flex-direction: row;
     border: #5A5A5A solid ;
@@ -77,7 +77,7 @@
 
 
 
-.body-wraps-image, .post-surgery-care-image{
+.body-wraps-image, .post-surgery-care-image, .massage-image{
     width: 300px;
     height: 300px;
     padding-left: 200px;
@@ -85,32 +85,39 @@
     padding-bottom: 40px;
 }
 
-.body-wraps-detail-div, .post-surgery-care-detail-div{
+.body-wraps-detail-div, .post-surgery-care-detail-div, .massage-detail-div{
     padding-left: 300px;
 }
 
-.body-wraps-detail-title-div, .post-surgery-care-detail-title-div{
+.body-wraps-detail-title-div, .post-surgery-care-detail-title-div, .massage-detail-title-div{
     text-align: center;
 }
 
-.body-wraps-detail-bulletpoint-div, .post-surgery-care-detail-bulletpoint-div{
+.body-wraps-detail-bulletpoint-div, .post-surgery-care-detail-bulletpoint-div, .massage-detail-bulletpoint-div{
     padding-left: 70;
     padding-right: 80px;
     padding-bottom: 20px;
 }
 
-.body-wraps-detail-bulletpoint-list, .post-surgery-care-detail-bulletpoint-list{
+.body-wraps-detail-bulletpoint-list, .post-surgery-care-detail-bulletpoint-list, .massage-detail-bulletpoint-list{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.body-wraps-detail-bulletpoint-list-item, .post-surgery-care-detail-bulletpoint-list-item{
+.body-wraps-detail-bulletpoint-list-item, .post-surgery-care-detail-bulletpoint-list-item, .massage-detail-bulletpoint-list-item{
     font-size: 20px;
     font-weight: 600;
 }
 
-.body-wraps-detail-pricing-div, .post-surgery-care-detail-pricing-div{
+/* Add-on items indentation (Massage Service) */
+.massage-detail-bulletpoint-list-item.add-on-item{
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.body-wraps-detail-pricing-div, .post-surgery-care-detail-pricing-div, .massage-detail-pricing-div{
     width: 700px;
     display: flex;
     gap: 50px;

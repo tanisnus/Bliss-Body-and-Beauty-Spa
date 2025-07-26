@@ -1,6 +1,7 @@
 import React from 'react'
 import scrub_image from '../images/body-scrub.jpg'
 import body_wraps_image from '../images/body-wrap.jpg'
+import massage_image from '../images/massage.jpg'
 import './Service.css'
 
 
@@ -10,7 +11,8 @@ import Card from '@mui/material/Card';
 import { BodyScrubFirstPriceCard, BodyScrubSecondPriceCard, BodyScrubThirdPriceCard } from '../components/PricingCards';
 import { BodyWrapsFirstPriceCard, BodyWrapsSecondPriceCard, BodyWrapsThirdPriceCard } from '../components/PricingCards';
 
-
+import { PostSurgeryCareFirstPriceCard, PostSurgeryCareSecondPriceCard, PostSurgeryCareThirdPriceCard } from '../components/PricingCards';
+import { MassageFirstPriceCard, MassageSecondPriceCard, MassageThirdPriceCard } from '../components/PricingCards';
 
 
 export default function Service() {
@@ -112,26 +114,28 @@ export default function Service() {
 
                     <div className='post-surgery-care-detail-bulletpoint-div'>
                         <ul className='post-surgery-care-detail-bulletpoint-list'>
-                            <li className='post-surgery-care-detail-bulletpoint-list-item'> Coming Soon</li>
-                            <li className='post-surgery-care-detail-bulletpoint-list-item'> Coming Soon</li>
-                            <li className='post-surgery-care-detail-bulletpoint-list-item'> Coming Soon</li>
+                            <li className='post-surgery-care-detail-bulletpoint-list-item'> Lymphatic Drainage Massage</li>
+                            <li className='post-surgery-care-detail-bulletpoint-list-item'> Cativation Therapy</li>
+                            <li className='post-surgery-care-detail-bulletpoint-list-item'> Ultrasound Therapy</li>
+                            <li className='post-surgery-care-detail-bulletpoint-list-item'> Red Light Therapy</li>
+
                         </ul>
                     </div>
 
 
                     <div className='post-surgery-care-detail-pricing-div'>
                         <Box sx={{ Width: 200 }}>
-                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyWrapsFirstPriceCard}</Card>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{PostSurgeryCareFirstPriceCard}</Card>
                         </Box>
 
                         <Box sx={{ Width: 200 }}>
                             {/* <Card variant="outlined"> {second_price_card}</Card> */}
-                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyWrapsSecondPriceCard}</Card>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{PostSurgeryCareSecondPriceCard}</Card>
 
                         </Box>
 
                         <Box sx={{ Width: 200 }}>
-                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyWrapsThirdPriceCard}</Card>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{PostSurgeryCareThirdPriceCard}</Card>
                         </Box>
                     </div>
                 </div>
@@ -141,6 +145,55 @@ export default function Service() {
 
 
 
+        {/* 5th Service Section - Facial */}
+
+
+        {/* 6th Service Section - Massage */}
+        <div className='sixth-service-div'>
+            <img className='massage-image' src={massage_image} alt='massage-image' />
+                <div className='massage-detail-div'>
+                    <div className='massage-detail-title-div'> 
+                        <h1>Massage</h1>
+                    </div>
+
+                    <div className='massage-detail-bulletpoint-div'>
+                        <ul className='massage-detail-bulletpoint-list'>
+                            <li className='massage-detail-bulletpoint-list-item'> Swedish</li>
+                            <li className='massage-detail-bulletpoint-list-item'> Deep Tissue </li>
+                            <li className='massage-detail-bulletpoint-list-item'> Thai Signature </li>
+                            <li className='massage-detail-bulletpoint-list-item'> Pregnancy </li>
+                            <li className='massage-detail-bulletpoint-list-item'> Sport Massage </li>
+                            <li className='massage-detail-bulletpoint-list-item'> Add ons: </li>
+                            <li className='massage-detail-bulletpoint-list-item add-on-item'> Hot Stone $35 </li>
+                            <li className='massage-detail-bulletpoint-list-item add-on-item'> CBD Oil $35 </li>
+                            <li className='massage-detail-bulletpoint-list-item add-on-item'> Back Scrub $35 </li>
+
+
+
+
+
+
+                        </ul>
+                    </div>
+
+
+                    <div className='massage-detail-pricing-div'>
+                        <Box sx={{ Width: 200 }}>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{MassageFirstPriceCard}</Card>
+                        </Box>
+
+                        <Box sx={{ Width: 200 }}>
+                            {/* <Card variant="outlined"> {second_price_card}</Card> */}
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{MassageSecondPriceCard}</Card>
+
+                        </Box>
+
+                        <Box sx={{ Width: 200 }}>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{MassageThirdPriceCard}</Card>
+                        </Box>
+                    </div>
+                </div>
+        </div>
 
 
 
