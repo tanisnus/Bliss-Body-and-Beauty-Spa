@@ -5,85 +5,13 @@ import './Service.css'
 
 
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import CardActions from '@mui/material/CardActions';
+
+import { BodyScrubFirstPriceCard, BodyScrubSecondPriceCard, BodyScrubThirdPriceCard } from '../components/PricingCards';
+import { BodyWrapsFirstPriceCard, BodyWrapsSecondPriceCard, BodyWrapsThirdPriceCard } from '../components/PricingCards';
 
 
 
-
-const bull = (
-    <Box
-        component="span"
-        sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-        
-    </Box>
-);
-
-
-
-// Pricing card for 30 mins
-  const first_price_card = (
-    <React.Fragment>
-      <CardContent>
-        
-        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16, fontFamily: 'Poppins'  }}>
-        ⏰ 30 mins
-        </Typography>
-        
-        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 500, fontFamily: 'Poppins' }}>
-           $60{bull}
-        </Typography>
-
-      </CardContent>
-
-
-    </React.Fragment>
-  );
-
-
-  // Pricing card for 60 mins
-  const second_price_card = (
-    <React.Fragment>
-      <CardContent>
-        
-        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16, fontFamily: 'Poppins'  }}>
-        ⏰ 60 mins
-        </Typography>
-        
-        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 500, fontFamily: 'Poppins'  }}>
-           $110{bull}
-        </Typography>
-
-      </CardContent>
-
-
-    </React.Fragment>
-  );
-
-
-
-  // Pricing card for 90 mins
-  const third_price_card = (
-    <React.Fragment>
-      <CardContent>
-        
-        <Typography variant="h6" component="div" sx={{ mb: 3, fontSize: 16, fontFamily: 'Poppins' }}>
-        ⏰ 90 mins
-        </Typography>
-        
-        <Typography variant="h6" component="div" align="center" sx={ {fontSize: 17, fontWeight: 500, fontFamily: 'Poppins' }}>
-           $160{bull}
-        </Typography>
-
-      </CardContent>
-
-
-    </React.Fragment>
-  );
 
 export default function Service() {
     return (
@@ -114,17 +42,17 @@ export default function Service() {
 
                     <div className='scrub-detail-pricing-div'>
                         <Box sx={{ Width: 200 }}>
-                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{first_price_card}</Card>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyScrubFirstPriceCard}</Card>
                         </Box>
 
                         <Box sx={{ Width: 200 }}>
                             {/* <Card variant="outlined"> {second_price_card}</Card> */}
-                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{second_price_card}</Card>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyScrubSecondPriceCard}</Card>
 
                         </Box>
 
                         <Box sx={{ Width: 200 }}>
-                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{third_price_card}</Card>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyScrubThirdPriceCard}</Card>
                         </Box>
                     </div>
                 </div>
@@ -142,32 +70,77 @@ export default function Service() {
 
                     <div className='body-wraps-detail-bulletpoint-div'>
                         <ul className='body-wraps-detail-bulletpoint-list'>
-                            <li className='body-wraps-detail-bulletpoint-list-item'> Unscented Salt Scrub </li>
-                            <li className='body-wraps-detail-bulletpoint-list-item'> Green Tea & Peppermint Salt Scrub</li>
-                            <li className='body-wraps-detail-bulletpoint-list-item'> Unscented Brown sugar scrub </li>
-                            <li className='body-wraps-detail-bulletpoint-list-item'> French Vanilla Latte Organic Brown Sugar Scrub </li>
-                            <li className='body-wraps-detail-bulletpoint-list-item'> Vanilla Orange Brown Sugar Scrub </li>
+                            <li className='body-wraps-detail-bulletpoint-list-item'> Body Luxe Hydrating Mask</li>
+                            <li className='body-wraps-detail-bulletpoint-list-item'> Seaweed Mud Mask</li>
+                            <li className='body-wraps-detail-bulletpoint-list-item'> Dead Sea Mud Mask </li>
+                            <li className='body-wraps-detail-bulletpoint-list-item'> Firming Mud Mask </li>
                         </ul>
                     </div>
 
 
-                    <div className='scrub-detail-pricing-div'>
+                    <div className='body-wraps-detail-pricing-div'>
                         <Box sx={{ Width: 200 }}>
-                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{first_price_card}</Card>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyWrapsFirstPriceCard}</Card>
                         </Box>
 
                         <Box sx={{ Width: 200 }}>
                             {/* <Card variant="outlined"> {second_price_card}</Card> */}
-                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{second_price_card}</Card>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyWrapsSecondPriceCard}</Card>
 
                         </Box>
 
                         <Box sx={{ Width: 200 }}>
-                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{third_price_card}</Card>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyWrapsThirdPriceCard}</Card>
                         </Box>
                     </div>
                 </div>
         </div>
+
+
+
+       {/* 3rd Service Section - Head Spa */}
+
+
+
+      {/* 4th Service Section - Post-Surgery Care */}
+      <div className='forth-service-div'>
+            <img className='post-surgery-care-image' src={scrub_image} alt='post-surgery-care-image' />
+                <div className='post-surgery-care-detail-div'>
+                    <div className='post-surgery-care-detail-title-div'> 
+                        <h1>Post-Surgery-Care</h1>
+                    </div>
+
+                    <div className='post-surgery-care-detail-bulletpoint-div'>
+                        <ul className='post-surgery-care-detail-bulletpoint-list'>
+                            <li className='post-surgery-care-detail-bulletpoint-list-item'> Coming Soon</li>
+                            <li className='post-surgery-care-detail-bulletpoint-list-item'> Coming Soon</li>
+                            <li className='post-surgery-care-detail-bulletpoint-list-item'> Coming Soon</li>
+                        </ul>
+                    </div>
+
+
+                    <div className='post-surgery-care-detail-pricing-div'>
+                        <Box sx={{ Width: 200 }}>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyWrapsFirstPriceCard}</Card>
+                        </Box>
+
+                        <Box sx={{ Width: 200 }}>
+                            {/* <Card variant="outlined"> {second_price_card}</Card> */}
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyWrapsSecondPriceCard}</Card>
+
+                        </Box>
+
+                        <Box sx={{ Width: 200 }}>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyWrapsThirdPriceCard}</Card>
+                        </Box>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
 
 
 

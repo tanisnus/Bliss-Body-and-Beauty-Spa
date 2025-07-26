@@ -48,7 +48,7 @@
 }
 
 .scrub-detail-bulletpoint-list-item{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -69,14 +69,15 @@
 
 
 /* 2nd Service */
-.second-service-div{
+.second-service-div, .forth-service-div{
     display: flex;
     flex-direction: row;
+    border: #5A5A5A solid ;
 }
 
 
 
-.body-wraps-image{
+.body-wraps-image, .post-surgery-care-image{
     width: 300px;
     height: 300px;
     padding-left: 200px;
@@ -84,27 +85,40 @@
     padding-bottom: 40px;
 }
 
-.body-wraps-detail-div{
+.body-wraps-detail-div, .post-surgery-care-detail-div{
     padding-left: 300px;
 }
 
-.body-wraps-detail-title-div{
+.body-wraps-detail-title-div, .post-surgery-care-detail-title-div{
     text-align: center;
 }
 
-.body-wraps-detail-bulletpoint-div{
+.body-wraps-detail-bulletpoint-div, .post-surgery-care-detail-bulletpoint-div{
     padding-left: 70;
     padding-right: 80px;
     padding-bottom: 20px;
 }
 
-.body-wraps-detail-bulletpoint-list{
+.body-wraps-detail-bulletpoint-list, .post-surgery-care-detail-bulletpoint-list{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.body-wraps-detail-bulletpoint-list-item{
-    font-size: 22px;
+.body-wraps-detail-bulletpoint-list-item, .post-surgery-care-detail-bulletpoint-list-item{
+    font-size: 20px;
     font-weight: 600;
 }
+
+.body-wraps-detail-pricing-div, .post-surgery-care-detail-pricing-div{
+    width: 700px;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
