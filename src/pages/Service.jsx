@@ -1,5 +1,6 @@
 import React from 'react'
 import scrub_image from '../images/body-scrub.jpg'
+import body_wraps_image from '../images/body-wrap.jpg'
 import './Service.css'
 
 
@@ -86,44 +87,93 @@ const bull = (
 
 export default function Service() {
     return (
+
+        // returning div
         <div className='service-div'>
            
+
+        {/* 1st Service Section - Body Scrub */}
+
+        <div className='first-service-div'>
             <img className='scrub-image' src={scrub_image} alt='scrub_image' />
-            <div className='scrub-detail-div'>
-                <div className='scrub-detail-title-div'> 
-                    <h1>Body Scrub</h1>
+                <div className='scrub-detail-div'>
+                    <div className='scrub-detail-title-div'> 
+                        <h1>Body Scrub</h1>
+                    </div>
+
+                    <div className='scrub-detail-bulletpoint-div'>
+                        <ul className='scrub-detail-bulletpoint-list'>
+                            <li className='scrub-detail-bulletpoint-list-item'> Unscented Salt Scrub </li>
+                            <li className='scrub-detail-bulletpoint-list-item'> Green Tea & Peppermint Salt Scrub</li>
+                            <li className='scrub-detail-bulletpoint-list-item'> Unscented Brown sugar scrub </li>
+                            <li className='scrub-detail-bulletpoint-list-item'> French Vanilla Latte Organic Brown Sugar Scrub </li>
+                            <li className='scrub-detail-bulletpoint-list-item'> Vanilla Orange Brown Sugar Scrub </li>
+                        </ul>
+                    </div>
+
+
+                    <div className='scrub-detail-pricing-div'>
+                        <Box sx={{ Width: 200 }}>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{first_price_card}</Card>
+                        </Box>
+
+                        <Box sx={{ Width: 200 }}>
+                            {/* <Card variant="outlined"> {second_price_card}</Card> */}
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{second_price_card}</Card>
+
+                        </Box>
+
+                        <Box sx={{ Width: 200 }}>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{third_price_card}</Card>
+                        </Box>
+                    </div>
                 </div>
+        </div>
 
-                <div className='scrub-detail-bulletpoint-div'>
-                    <ul className='scrub-detail-bulletpoint-list'>
-                        <li className='scrub-detail-bulletpoint-list-item'> Unscented Salt Scrub </li>
-                        <li className='scrub-detail-bulletpoint-list-item'> Green Tea & Peppermint Salt Scrub</li>
-                        <li className='scrub-detail-bulletpoint-list-item'> Unscented Brown sugar scrub </li>
-                        <li className='scrub-detail-bulletpoint-list-item'> French Vanilla Latte Organic Brown Sugar Scrub </li>
-                        <li className='scrub-detail-bulletpoint-list-item'> Vanilla Orange Brown Sugar Scrub </li>
-                    </ul>
+         
+
+        {/* 2nd Service Section - Body Wraps */}
+        <div className='second-service-div'>
+            <img className='body-wraps-image' src={body_wraps_image} alt='body-wraps-image' />
+                <div className='body-wraps-detail-div'>
+                    <div className='body-wraps-detail-title-div'> 
+                        <h1>Body Wraps</h1>
+                    </div>
+
+                    <div className='body-wraps-detail-bulletpoint-div'>
+                        <ul className='body-wraps-detail-bulletpoint-list'>
+                            <li className='body-wraps-detail-bulletpoint-list-item'> Unscented Salt Scrub </li>
+                            <li className='body-wraps-detail-bulletpoint-list-item'> Green Tea & Peppermint Salt Scrub</li>
+                            <li className='body-wraps-detail-bulletpoint-list-item'> Unscented Brown sugar scrub </li>
+                            <li className='body-wraps-detail-bulletpoint-list-item'> French Vanilla Latte Organic Brown Sugar Scrub </li>
+                            <li className='body-wraps-detail-bulletpoint-list-item'> Vanilla Orange Brown Sugar Scrub </li>
+                        </ul>
+                    </div>
+
+
+                    <div className='scrub-detail-pricing-div'>
+                        <Box sx={{ Width: 200 }}>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{first_price_card}</Card>
+                        </Box>
+
+                        <Box sx={{ Width: 200 }}>
+                            {/* <Card variant="outlined"> {second_price_card}</Card> */}
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{second_price_card}</Card>
+
+                        </Box>
+
+                        <Box sx={{ Width: 200 }}>
+                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{third_price_card}</Card>
+                        </Box>
+                    </div>
                 </div>
+        </div>
 
 
 
-                <div className='scrub-detail-pricing-div'>
-                    <Box sx={{ Width: 200 }}>
-                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{first_price_card}</Card>
-                    </Box>
 
-                    <Box sx={{ Width: 200 }}>
-                        {/* <Card variant="outlined"> {second_price_card}</Card> */}
-                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{second_price_card}</Card>
 
-                    </Box>
-
-                    <Box sx={{ Width: 200 }}>
-                        <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{third_price_card}</Card>
-                    </Box>
-                </div>
-
-            </div>
-
+        {/* returning div */}
         </div>
 
 
