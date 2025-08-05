@@ -41,7 +41,7 @@ export const BodyScrubFirstPriceCard = (
                 fontSize: { xs: 12, sm: 14 },
                 fontFamily: 'Inter, sans-serif',
                 color: '#6b7280',
-                fontWeight: 400,
+                fontWeight: {xs: 200, sm:250, md:400},
                 letterSpacing: '0.5px'
             }}
         >
@@ -52,7 +52,7 @@ export const BodyScrubFirstPriceCard = (
             variant="h5" 
             component="div" 
             sx={{
-                fontSize: { xs: 14, sm: 16 },
+                fontSize: { xs: 12, sm: 14 },
                 fontWeight: 600,
                 fontFamily: 'Inter, sans-serif',
                 color: '#1f2937',
