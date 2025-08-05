@@ -38,10 +38,10 @@ export const BodyScrubFirstPriceCard = (
             component="div" 
             sx={{ 
                 mb: 1,
-                fontSize: { xs: 12, sm: 14 },
-                fontFamily: 'Inter, sans-serif',
+                fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                fontFamily: 'PT Serif, sans-serif',
                 color: '#6b7280',
-                fontWeight: {xs: 200, sm:250, md:400},
+                fontWeight: {xs: 200, sm:200, md:200},
                 letterSpacing: '0.5px'
             }}
         >
@@ -52,9 +52,9 @@ export const BodyScrubFirstPriceCard = (
             variant="h5" 
             component="div" 
             sx={{
-                fontSize: { xs: 12, sm: 14 },
-                fontWeight: 600,
-                fontFamily: 'Inter, sans-serif',
+              fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+              fontWeight: 400,
+                fontFamily: 'PT Serif, sans-serif',
                 color: '#1f2937',
                 letterSpacing: '0.5px'
             }}
@@ -68,6 +68,9 @@ export const BodyScrubFirstPriceCard = (
 
 
 
+
+
+
 export const BodyScrubSecondPriceCard = (
     <React.Fragment>
       <CardContent sx={{ padding: '16px 12px', textAlign: 'center' }}>
@@ -77,10 +80,10 @@ export const BodyScrubSecondPriceCard = (
             component="div" 
             sx={{ 
                 mb: 1,
-                fontSize: { xs: 12, sm: 14 },
-                fontFamily: 'Inter, sans-serif',
+                fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                fontFamily: 'PT Serif, sans-serif',
                 color: '#6b7280',
-                fontWeight: 400,
+                fontWeight: {xs: 200, sm:200, md:200},
                 letterSpacing: '0.5px'
             }}
         >
@@ -91,9 +94,9 @@ export const BodyScrubSecondPriceCard = (
             variant="h5" 
             component="div" 
             sx={{
-                fontSize: { xs: 14, sm: 16 },
-                fontWeight: 600,
-                fontFamily: 'Inter, sans-serif',
+              fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+              fontWeight: 400,
+                fontFamily: 'PT Serif, sans-serif',
                 color: '#1f2937',
                 letterSpacing: '0.5px'
             }}
@@ -116,10 +119,10 @@ export const BodyScrubThirdPriceCard = (
             component="div" 
             sx={{ 
                 mb: 1,
-                fontSize: { xs: 12, sm: 14 },
-                fontFamily: 'Inter, sans-serif',
+                fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                fontFamily: 'PT Serif, sans-serif',
                 color: '#6b7280',
-                fontWeight: 400,
+                fontWeight: {xs: 200, sm:200, md:200},
                 letterSpacing: '0.5px'
             }}
         >
@@ -130,9 +133,9 @@ export const BodyScrubThirdPriceCard = (
             variant="h5" 
             component="div" 
             sx={{
-                fontSize: { xs: 14, sm: 16 },
-                fontWeight: 600,
-                fontFamily: 'Inter, sans-serif',
+              fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+              fontWeight: 400,
+                fontFamily: 'PT Serif, sans-serif',
                 color: '#1f2937',
                 letterSpacing: '0.5px'
             }}
@@ -153,13 +156,13 @@ export const BodyWrapsFirstPriceCard = (
             variant="body2" 
             component="div" 
             sx={{ 
-                mb: 1,
-                fontSize: { xs: 12, sm: 14 },
-                fontFamily: 'Inter, sans-serif',
-                color: '#6b7280',
-                fontWeight: 400,
-                letterSpacing: '0.5px'
-            }}
+              mb: 1,
+              fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+              fontFamily: 'PT Serif, sans-serif',
+              color: '#6b7280',
+              fontWeight: {xs: 200, sm:200, md:200},
+              letterSpacing: '0.5px'
+          }}
         >
             ⏰ 30 mins
         </Typography>
@@ -167,13 +170,13 @@ export const BodyWrapsFirstPriceCard = (
         <Typography 
             variant="h5" 
             component="div" 
-            sx={{
-                fontSize: { xs: 14, sm: 16 },
-                fontWeight: 600,
-                fontFamily: 'Inter, sans-serif',
+             sx={{
+              fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+              fontWeight: 400,
+                fontFamily: 'PT Serif, sans-serif',
                 color: '#1f2937',
                 letterSpacing: '0.5px'
-            }}
+              }}
         >
             $70
         </Typography>
@@ -189,7 +192,7 @@ export const BodyWrapsSecondPriceCard = (
                 component="div" 
                 sx={{ 
                     mb: 1,
-                    fontSize: { xs: 12, sm: 14 },
+                    fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                     fontFamily: 'Inter, sans-serif',
                     color: '#6b7280',
                     fontWeight: 400,
@@ -203,11 +206,11 @@ export const BodyWrapsSecondPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                    fontSize: { xs: 14, sm: 16 },
-                    fontWeight: 600,
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#1f2937',
-                    letterSpacing: '0.5px'
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontWeight: 400,
+                  fontFamily: 'PT Serif, sans-serif',
+                  color: '#1f2937',
+                  letterSpacing: '0.5px'
                 }}
             >
                 $135
@@ -224,7 +227,7 @@ export const BodyWrapsThirdPriceCard = (
                 component="div" 
                 sx={{ 
                     mb: 1,
-                    fontSize: { xs: 12, sm: 14 },
+                    fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                     fontFamily: 'Inter, sans-serif',
                     color: '#6b7280',
                     fontWeight: 400,
@@ -238,11 +241,11 @@ export const BodyWrapsThirdPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                    fontSize: { xs: 14, sm: 16 },
-                    fontWeight: 600,
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#1f2937',
-                    letterSpacing: '0.5px'
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontWeight: 400,
+                  fontFamily: 'PT Serif, sans-serif',
+                  color: '#1f2937',
+                  letterSpacing: '0.5px'
                 }}
             >
                 $185
@@ -261,12 +264,12 @@ export const PostSurgeryCareFirstPriceCard = (
                 variant="body2" 
                 component="div" 
                 sx={{ 
-                    mb: 1,
-                    fontSize: { xs: 12, sm: 14 },
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#6b7280',
-                    fontWeight: 400,
-                    letterSpacing: '0.5px'
+                  mb: 1,
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontFamily: 'Inter, sans-serif',
+                  color: '#6b7280',
+                  fontWeight: 400,
+                  letterSpacing: '0.5px'
                 }}
             >
                 ⏰ 60 mins
@@ -276,11 +279,11 @@ export const PostSurgeryCareFirstPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                    fontSize: { xs: 14, sm: 16 },
-                    fontWeight: 600,
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#1f2937',
-                    letterSpacing: '0.5px'
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontWeight: 400,
+                  fontFamily: 'PT Serif, sans-serif',
+                  color: '#1f2937',
+                  letterSpacing: '0.5px'
                 }}
             >
                 $120
@@ -296,12 +299,12 @@ export const PostSurgeryCareSecondPriceCard = (
                 variant="body2" 
                 component="div" 
                 sx={{ 
-                    mb: 1,
-                    fontSize: { xs: 12, sm: 14 },
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#6b7280',
-                    fontWeight: 400,
-                    letterSpacing: '0.5px'
+                  mb: 1,
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontFamily: 'Inter, sans-serif',
+                  color: '#6b7280',
+                  fontWeight: 400,
+                  letterSpacing: '0.5px'
                 }}
             >
                 ⏰ 90 mins
@@ -311,11 +314,11 @@ export const PostSurgeryCareSecondPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                    fontSize: { xs: 14, sm: 16 },
-                    fontWeight: 600,
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#1f2937',
-                    letterSpacing: '0.5px'
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontWeight: 400,
+                  fontFamily: 'PT Serif, sans-serif',
+                  color: '#1f2937',
+                  letterSpacing: '0.5px'
                 }}
             >
                 $180
@@ -331,12 +334,12 @@ export const PostSurgeryCareThirdPriceCard = (
                 variant="body2" 
                 component="div" 
                 sx={{ 
-                    mb: 1,
-                    fontSize: { xs: 12, sm: 14 },
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#6b7280',
-                    fontWeight: 400,
-                    letterSpacing: '0.5px'
+                  mb: 1,
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontFamily: 'Inter, sans-serif',
+                  color: '#6b7280',
+                  fontWeight: 400,
+                  letterSpacing: '0.5px'
                 }}
             >
                 ⏰ 120 mins
@@ -346,11 +349,11 @@ export const PostSurgeryCareThirdPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                    fontSize: { xs: 14, sm: 16 },
-                    fontWeight: 600,
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#1f2937',
-                    letterSpacing: '0.5px'
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontWeight: 400,
+                  fontFamily: 'PT Serif, sans-serif',
+                  color: '#1f2937',
+                  letterSpacing: '0.5px'
                 }}
             >
                 $240
@@ -369,12 +372,12 @@ export const MassageFirstPriceCard = (
                 variant="body2" 
                 component="div" 
                 sx={{ 
-                    mb: 1,
-                    fontSize: { xs: 12, sm: 14 },
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#6b7280',
-                    fontWeight: 400,
-                    letterSpacing: '0.5px'
+                  mb: 1,
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontFamily: 'Inter, sans-serif',
+                  color: '#6b7280',
+                  fontWeight: 400,
+                  letterSpacing: '0.5px'
                 }}
             >
                 ⏰ 60 mins
@@ -384,11 +387,11 @@ export const MassageFirstPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                    fontSize: { xs: 14, sm: 16 },
-                    fontWeight: 600,
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#1f2937',
-                    letterSpacing: '0.5px'
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontWeight: 400,
+                  fontFamily: 'PT Serif, sans-serif',
+                  color: '#1f2937',
+                  letterSpacing: '0.5px'
                 }}
             >
                 $95
@@ -404,12 +407,12 @@ export const MassageSecondPriceCard = (
                 variant="body2" 
                 component="div" 
                 sx={{ 
-                    mb: 1,
-                    fontSize: { xs: 12, sm: 14 },
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#6b7280',
-                    fontWeight: 400,
-                    letterSpacing: '0.5px'
+                  mb: 1,
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontFamily: 'Inter, sans-serif',
+                  color: '#6b7280',
+                  fontWeight: 400,
+                  letterSpacing: '0.5px'
                 }}
             >
                 ⏰ 90 mins
@@ -419,11 +422,11 @@ export const MassageSecondPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                    fontSize: { xs: 14, sm: 16 },
-                    fontWeight: 600,
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#1f2937',
-                    letterSpacing: '0.5px'
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontWeight: 400,
+                  fontFamily: 'PT Serif, sans-serif',
+                  color: '#1f2937',
+                  letterSpacing: '0.5px'
                 }}
             >
                 $135
@@ -439,12 +442,12 @@ export const MassageThirdPriceCard = (
                 variant="body2" 
                 component="div" 
                 sx={{ 
-                    mb: 1,
-                    fontSize: { xs: 12, sm: 14 },
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#6b7280',
-                    fontWeight: 400,
-                    letterSpacing: '0.5px'
+                  mb: 1,
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontFamily: 'Inter, sans-serif',
+                  color: '#6b7280',
+                  fontWeight: 400,
+                  letterSpacing: '0.5px'
                 }}
             >
                 ⏰ 120 mins
@@ -454,11 +457,11 @@ export const MassageThirdPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                    fontSize: { xs: 14, sm: 16 },
-                    fontWeight: 600,
-                    fontFamily: 'Inter, sans-serif',
-                    color: '#1f2937',
-                    letterSpacing: '0.5px'
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+                  fontWeight: 400,
+                  fontFamily: 'PT Serif, sans-serif',
+                  color: '#1f2937',
+                  letterSpacing: '0.5px'
                 }}
             >
                 $175

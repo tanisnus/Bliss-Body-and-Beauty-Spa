@@ -56,3 +56,34 @@
  
     margin-top: -20px;
 }
+
+
+
+/* Iphone Responsive Design  */
+
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+    .header-section {
+        height: 60px;
+        width: 360px;
+        padding: 0 20px;
+        background-color: rgba(248, 225, 231, 0.98);
+    }
+
+    .header-list {
+        gap: 15px;
+    }
+
+    .header-each-link {
+        font-size: 14px;
+    }
+
+    .logo-div-top-left {
+        padding-top: 50px;
+    }
+
+    .logo-img {
+        height: 80px;
+        width: 100px;
+        margin-top: -15px;
+    }
+}
