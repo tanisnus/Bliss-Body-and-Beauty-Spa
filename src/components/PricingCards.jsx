@@ -38,7 +38,7 @@ export const BodyScrubFirstPriceCard = (
             component="div" 
             sx={{ 
                 mb: 1,
-                fontSize: { xs: 13, sm: 13, md: 13 },
+                fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                 fontFamily: 'PT Serif, sans-serif',
                 color: '#6b7280',
                 fontWeight: {xs: 200, sm:200, md:200},
@@ -52,8 +52,8 @@ export const BodyScrubFirstPriceCard = (
             variant="h5" 
             component="div" 
             sx={{
-                fontSize: { xs: 13, sm: 13, md: 13 },
-                fontWeight: 400,
+              fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+              fontWeight: 400,
                 fontFamily: 'PT Serif, sans-serif',
                 color: '#1f2937',
                 letterSpacing: '0.5px'
@@ -80,7 +80,7 @@ export const BodyScrubSecondPriceCard = (
             component="div" 
             sx={{ 
                 mb: 1,
-                fontSize: { xs: 13, sm: 13, md: 13 },
+                fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                 fontFamily: 'PT Serif, sans-serif',
                 color: '#6b7280',
                 fontWeight: {xs: 200, sm:200, md:200},
@@ -94,8 +94,8 @@ export const BodyScrubSecondPriceCard = (
             variant="h5" 
             component="div" 
             sx={{
-                fontSize: { xs: 13, sm: 13, md: 13 },
-                fontWeight: 400,
+              fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+              fontWeight: 400,
                 fontFamily: 'PT Serif, sans-serif',
                 color: '#1f2937',
                 letterSpacing: '0.5px'
@@ -119,7 +119,7 @@ export const BodyScrubThirdPriceCard = (
             component="div" 
             sx={{ 
                 mb: 1,
-                fontSize: { xs: 13, sm: 13, md: 13 },
+                fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                 fontFamily: 'PT Serif, sans-serif',
                 color: '#6b7280',
                 fontWeight: {xs: 200, sm:200, md:200},
@@ -133,8 +133,8 @@ export const BodyScrubThirdPriceCard = (
             variant="h5" 
             component="div" 
             sx={{
-                fontSize: { xs: 13, sm: 13, md: 13 },
-                fontWeight: 400,
+              fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+              fontWeight: 400,
                 fontFamily: 'PT Serif, sans-serif',
                 color: '#1f2937',
                 letterSpacing: '0.5px'
@@ -157,7 +157,7 @@ export const BodyWrapsFirstPriceCard = (
             component="div" 
             sx={{ 
               mb: 1,
-              fontSize: { xs: 13, sm: 13, md: 13 },
+              fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
               fontFamily: 'PT Serif, sans-serif',
               color: '#6b7280',
               fontWeight: {xs: 200, sm:200, md:200},
@@ -171,8 +171,8 @@ export const BodyWrapsFirstPriceCard = (
             variant="h5" 
             component="div" 
              sx={{
-                fontSize: { xs: 13, sm: 13, md: 13 },
-                fontWeight: 400,
+              fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
+              fontWeight: 400,
                 fontFamily: 'PT Serif, sans-serif',
                 color: '#1f2937',
                 letterSpacing: '0.5px'
@@ -192,7 +192,7 @@ export const BodyWrapsSecondPriceCard = (
                 component="div" 
                 sx={{ 
                     mb: 1,
-                    fontSize: { xs: 12, sm: 14 },
+                    fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                     fontFamily: 'Inter, sans-serif',
                     color: '#6b7280',
                     fontWeight: 400,
@@ -206,7 +206,7 @@ export const BodyWrapsSecondPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                  fontSize: { xs: 13, sm: 13, md: 13 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontWeight: 400,
                   fontFamily: 'PT Serif, sans-serif',
                   color: '#1f2937',
@@ -227,7 +227,7 @@ export const BodyWrapsThirdPriceCard = (
                 component="div" 
                 sx={{ 
                     mb: 1,
-                    fontSize: { xs: 12, sm: 14 },
+                    fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                     fontFamily: 'Inter, sans-serif',
                     color: '#6b7280',
                     fontWeight: 400,
@@ -241,7 +241,7 @@ export const BodyWrapsThirdPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                  fontSize: { xs: 13, sm: 13, md: 13 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontWeight: 400,
                   fontFamily: 'PT Serif, sans-serif',
                   color: '#1f2937',
@@ -265,7 +265,7 @@ export const PostSurgeryCareFirstPriceCard = (
                 component="div" 
                 sx={{ 
                   mb: 1,
-                  fontSize: { xs: 12, sm: 14 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontFamily: 'Inter, sans-serif',
                   color: '#6b7280',
                   fontWeight: 400,
@@ -279,7 +279,7 @@ export const PostSurgeryCareFirstPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                  fontSize: { xs: 13, sm: 13, md: 13 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontWeight: 400,
                   fontFamily: 'PT Serif, sans-serif',
                   color: '#1f2937',
@@ -300,7 +300,7 @@ export const PostSurgeryCareSecondPriceCard = (
                 component="div" 
                 sx={{ 
                   mb: 1,
-                  fontSize: { xs: 12, sm: 14 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontFamily: 'Inter, sans-serif',
                   color: '#6b7280',
                   fontWeight: 400,
@@ -314,7 +314,7 @@ export const PostSurgeryCareSecondPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                  fontSize: { xs: 13, sm: 13, md: 13 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontWeight: 400,
                   fontFamily: 'PT Serif, sans-serif',
                   color: '#1f2937',
@@ -335,7 +335,7 @@ export const PostSurgeryCareThirdPriceCard = (
                 component="div" 
                 sx={{ 
                   mb: 1,
-                  fontSize: { xs: 12, sm: 14 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontFamily: 'Inter, sans-serif',
                   color: '#6b7280',
                   fontWeight: 400,
@@ -349,7 +349,7 @@ export const PostSurgeryCareThirdPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                  fontSize: { xs: 13, sm: 13, md: 13 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontWeight: 400,
                   fontFamily: 'PT Serif, sans-serif',
                   color: '#1f2937',
@@ -373,7 +373,7 @@ export const MassageFirstPriceCard = (
                 component="div" 
                 sx={{ 
                   mb: 1,
-                  fontSize: { xs: 12, sm: 14 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontFamily: 'Inter, sans-serif',
                   color: '#6b7280',
                   fontWeight: 400,
@@ -387,7 +387,7 @@ export const MassageFirstPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                  fontSize: { xs: 13, sm: 13, md: 13 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontWeight: 400,
                   fontFamily: 'PT Serif, sans-serif',
                   color: '#1f2937',
@@ -408,7 +408,7 @@ export const MassageSecondPriceCard = (
                 component="div" 
                 sx={{ 
                   mb: 1,
-                  fontSize: { xs: 12, sm: 14 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontFamily: 'Inter, sans-serif',
                   color: '#6b7280',
                   fontWeight: 400,
@@ -422,7 +422,7 @@ export const MassageSecondPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                  fontSize: { xs: 13, sm: 13, md: 13 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontWeight: 400,
                   fontFamily: 'PT Serif, sans-serif',
                   color: '#1f2937',
@@ -443,7 +443,7 @@ export const MassageThirdPriceCard = (
                 component="div" 
                 sx={{ 
                   mb: 1,
-                  fontSize: { xs: 12, sm: 14 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontFamily: 'Inter, sans-serif',
                   color: '#6b7280',
                   fontWeight: 400,
@@ -457,7 +457,7 @@ export const MassageThirdPriceCard = (
                 variant="h5" 
                 component="div" 
                 sx={{
-                  fontSize: { xs: 13, sm: 13, md: 13 },
+                  fontSize: { xs: 10, sm: 10, md: 10, lg: 13, xl: 13 },
                   fontWeight: 400,
                   fontFamily: 'PT Serif, sans-serif',
                   color: '#1f2937',
