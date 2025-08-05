@@ -1,13 +1,24 @@
+/* Font Family */
+/* "Playfair Display" - for title*/ 
+/* "PT Serif" - for body */
+
+
+/* Small Mobile Responsive Design (up to 480px) */
+/* Mobile Responsive Design (up to 768px) */
+/* Tablet Responsive Design (768px - 1024px) */
+
+
+
+
+
+
 /* Styling the whole service page */
 .service-div{
     display: flex;
     flex-direction: column;
     background-color: #E6F4EA;
     /* background-color: #d7435e; */
-
 }
-
-
 
 /*  1st Service */
 .first-service-div{
@@ -28,28 +39,34 @@
     padding-left: 300px;
 }
 
+/* Title above bulletpoint list */
 .scrub-detail-title-div{
     text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #374151;
+   
 }
 
-
 .scrub-detail-bulletpoint-div{
-    padding-left: 70;
+    padding-left: 70px;
     padding-right: 80px;
     padding-bottom: 20px;
-    
 }
 
 .scrub-detail-bulletpoint-list{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
 }
 
+/* Items on bulletpoint list */
 .scrub-detail-bulletpoint-list-item{
-    font-size: 20px;
-    font-weight: 600;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4f17d2;
+    line-height: 1.5;
+    margin-bottom: 6px;
 }
 
 .scrub-detail-pricing-div{
@@ -62,20 +79,12 @@
 
 
 
-
-
-
-
-
-
-/* 2nd Service */
+/* 2nd - 6th Service */
 .second-service-div, .forth-service-div, .sixth-service-div{
     display: flex;
     flex-direction: row;
     border: #5A5A5A solid ;
 }
-
-
 
 .body-wraps-image, .post-surgery-care-image, .massage-image{
     width: 300px;
@@ -89,12 +98,15 @@
     padding-left: 300px;
 }
 
+/* Title above bulletpoint list */
 .body-wraps-detail-title-div, .post-surgery-care-detail-title-div, .massage-detail-title-div{
     text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #374151;
 }
 
-.body-wraps-detail-bulletpoint-div, .post-surgery-care-detail-bulletpoint-div, .massage-detail-bulletpoint-div{
-    padding-left: 70;
+.body-wraps-detail-bulletpoint-div, .post-surgery-care-detail-bulletpoint-div{
+    padding-left: 70px;
     padding-right: 80px;
     padding-bottom: 20px;
 }
@@ -105,17 +117,17 @@
     gap: 10px;
 }
 
+/* Items on bulletpoint list */
 .body-wraps-detail-bulletpoint-list-item, .post-surgery-care-detail-bulletpoint-list-item, .massage-detail-bulletpoint-list-item{
-    font-size: 20px;
-    font-weight: 600;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    color: #4f17d2;
 }
 
-/* Add-on items indentation (Massage Service) */
-.massage-detail-bulletpoint-list-item.add-on-item{
-    margin-left: 30px;
-    font-size: 18px;
-    font-weight: 500;
-}
+
 
 .body-wraps-detail-pricing-div, .post-surgery-care-detail-pricing-div, .massage-detail-pricing-div{
     width: 700px;
@@ -125,6 +137,109 @@
 }
 
 
+
+
+/* 6th Service */
+.massage-detail-bulletpoint-div{
+    padding-left: 30px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+}
+
+    /* Add-on items indentation (Massage Service) */
+    .massage-detail-bulletpoint-list-item.add-on-item{
+        margin-left: 30px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+
+/* .massage-detail-pricing-div{
+    width: 700px;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 20px;
+} */
+
+
+
+
+
+
+
+
+/* Iphone Responsive Design  */
+
+@media screen and (max-width: 956px) and (min-width: 390px) {
+
+    /* Whole Service Div (Horizontally) */
+    .first-service-div, .second-service-div, .forth-service-div, .sixth-service-div {
+        display: flex;
+        flex-direction: row;
+        border: #5A5A5A solid ;    
+    }
+
+    /* Image on the left */
+    .scrub-image, .body-wraps-image, .post-surgery-care-image, .massage-image {
+        width: 100px;
+        height: 150px;
+        padding-left: 10px;
+    }
+
+
+    /* Right Side within service div (Description) */
+   
+
+    .scrub-detail-div, .body-wraps-detail-div, .post-surgery-care-detail-div, .massage-detail-div {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 700px;
+        height: 400px;
+    }
+
+        .scrub-detail-title-div, .body-wraps-detail-title-div, .post-surgery-care-detail-title-div, .massage-detail-title-div{
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            color: #374151;
+        }
+
+        /* Bulletpoint Div */
+        .scrub-detail-bulletpoint-div, .body-wraps-detail-bulletpoint-div, .post-surgery-care-detail-bulletpoint-div, .massage-detail-bulletpoint-div{
+            width: 230px;
+            height: 140px;
+            padding-bottom: 0px;
+        }
+
+            /* Bulletpoint List */
+            .scrub-detail-bulletpoint-list, .body-wraps-detail-bulletpoint-list, .post-surgery-care-detail-bulletpoint-list, .massage-detail-bulletpoint-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-left: 20px;
+            }
+
+                /* Items on bulletpoint list */
+                .scrub-detail-bulletpoint-list-item, .body-wraps-detail-bulletpoint-list-item, .post-surgery-care-detail-bulletpoint-list-item, .massage-detail-bulletpoint-list-item{
+                    font-family: 'PT Serif', serif;
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #4f17d2;
+                    line-height: 1.5;
+                    margin-bottom: 6px;
+                }
+
+        /* Pricing Div */
+        .scrub-detail-pricing-div, .body-wraps-detail-pricing-div, .post-surgery-care-detail-pricing-div, .massage-detail-pricing-div{
+            width: 400px;
+            display: flex;
+            gap: 50px;
+            padding-bottom: 20px;
+            padding-top: 70px;
+            padding-left: 0px;
+            margin-left: -80px;
+        }
+
+}
 
 
 
