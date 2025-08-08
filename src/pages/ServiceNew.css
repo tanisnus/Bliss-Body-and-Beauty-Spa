@@ -1,3 +1,6 @@
+/* Welcome Section */
+
+
 .intro-div {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,9 @@
             border: 3px solid #dcadad;
         }
 
+
+
+
     .text-div {
         width: 400px;
         height: 200px;  
@@ -47,3 +53,30 @@
             color: #555;
         }
 
+
+
+/* Services Section */
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px;
+}
+
+
+    .services-row {
+        display: flex;
+        gap: 40px;
+    }
+
+            .service-card {
+                flex: 1;
+                
+            }
+
+                .service-card img {
+                    width: 80%;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
