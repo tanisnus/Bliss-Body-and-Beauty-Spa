@@ -4,7 +4,11 @@ import './ServiceNew.css'
 
 import scrub_image from '../images/body-scrub.jpg'
 import body_wraps_image from '../images/body-wrap.jpg'
+
+
+import facial_image from '../images/facial.jpg'
 import massage_image from '../images/massage.jpg'
+
 
 import spaLogo from '../images/Spa_Logo.png'
 
@@ -43,52 +47,50 @@ export default function Service() {
             {/* All Services Section */}
             <div className='services-grid'>
 
+                {/* Row 1 */}
                 <div className='services-row'>
-                row 1
+
+                    
                     <div className='service-card'>
                         <img src={scrub_image}></img>
                         <h3> Body Scrub</h3>
-                        <p> Description</p>
                     </div>
 
 
                     <div className='service-card'>
-                        <img></img>
-                        <h3> Service 2</h3>
-                        <p> Description</p>
+                        <img src={body_wraps_image}></img>
+                        <h3> Body Wraps</h3>
                     </div>
 
 
                     <div className='service-card'>
                         <img></img> 
-                        <h3> Service 3</h3>
-                        <p> Description</p>
-
+                        <h3> Head Spa</h3>
                     </div>   
+
                 </div>
 
+
+
+                {/* Row 2 */}
                 <div className='services-row'>
-                    row 2
+
                     <div className='service-card'>
                         <img ></img>
-                        <h3> Service 4</h3>
-                        <p> Description</p>
+                        <h3> Post-Surgery Care</h3>
                     </div>
 
-
                     <div className='service-card'>
-                        <img></img>
-                        <h3> Service 5</h3>
-                        <p> Description</p>
+                        <img src={facial_image}></img>
+                        <h3> Facial</h3>
                     </div>
 
-
                     <div className='service-card'>
-                        <img></img> 
-                        <h3> Service 6</h3>
-                        <p> Description</p>
-
+                        <img src={massage_image}></img> 
+                        <h3> Massage</h3>
                     </div>   
+
+
                 </div>
 
 
