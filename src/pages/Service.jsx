@@ -43,8 +43,20 @@ export default function Service() {
 
 
                     <div className='scrub-detail-pricing-div'>
-                        <Box sx={{ Width: 200 }}>
-                            <Card variant="outlined" sx={{ backgroundColor: '#FDECEF', borderRadius: 5 }}>{BodyScrubFirstPriceCard}</Card>
+                    <Box sx={{ width: 150, height: 100 }}>
+                            <Card sx={{ 
+                                backgroundColor: '#ffffff', 
+                                borderRadius: 12,
+                                boxShadow: '0 4px 16px rgba(139, 92, 246, 0.15)',
+                                border: '1px solid #f3e8ff',
+                                transition: 'transform 0.2s ease-in-out',
+                                '&:hover': {
+                                    transform: 'translateY(-2px)',
+                                    boxShadow: '0 6px 20px rgba(139, 92, 246, 0.25)'
+                                }
+                            }}>
+                                {BodyScrubFirstPriceCard}
+                            </Card>
                         </Box>
 
                         <Box sx={{ Width: 200 }}>

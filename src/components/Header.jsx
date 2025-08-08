@@ -16,8 +16,7 @@ export default function Header() {
 
             <ul className='header-list'>
                 <li className='header-list-item'>
-                    {/* to='/pages/Service.jsx' */}
-                    <Link className='header-each-link' to='/pages/Service.jsx'> Services</Link>
+                    <Link className='header-each-link' to='/service'> Services</Link>
                 </li>
 
                 <li className='header-list-item'>
@@ -25,7 +24,7 @@ export default function Header() {
                 </li>
 
                 <li className='header-list-item'>
-                    <Link className='header-each-link'> Contact</Link>
+                    <Link className='header-each-link' to='/contact'> Contact</Link>
                 </li>
 
             </ul>

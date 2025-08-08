@@ -4,7 +4,8 @@ import Header from './components/Header'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // import pages
-import Service from './pages/Service';
+import ServiceNew from './pages/ServiceNew';
+import Contact from './pages/Contact';
 
 function App() {
 
@@ -18,8 +19,9 @@ function App() {
 
         <section className='main-content-section'>
           <Routes>
-            <Route path='/pages/Service.jsx' element={<Service />} />     
-
+            <Route path='/' element={<ServiceNew />} />
+            <Route path='/service' element={<ServiceNew />} />     
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </section>
 
