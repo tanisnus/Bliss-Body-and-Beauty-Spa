@@ -4,8 +4,9 @@ import './ServiceNew.css'
 
 import scrub_image from '../images/body-scrub.jpg'
 import body_wraps_image from '../images/body-wrap.jpg'
+import head_spa_image from '../images/head-spa.jpg'
 
-
+import post_surgery_image from '../images/post-surgery.jpg'
 import facial_image from '../images/facial.jpg'
 import massage_image from '../images/massage.jpg'
 
@@ -52,19 +53,19 @@ export default function Service() {
 
                     
                     <div className='service-card'>
-                        <img src={scrub_image}></img>
+                        <img src={scrub_image} alt="Body Scrub"></img>
                         <h3> Body Scrub</h3>
                     </div>
 
 
                     <div className='service-card'>
-                        <img src={body_wraps_image}></img>
+                        <img src={body_wraps_image} alt="Body Wraps"></img>
                         <h3> Body Wraps</h3>
                     </div>
 
 
                     <div className='service-card'>
-                        <img></img> 
+                        <img src={head_spa_image} alt="Head Spa"></img> 
                         <h3> Head Spa</h3>
                     </div>   
 
@@ -76,17 +77,17 @@ export default function Service() {
                 <div className='services-row'>
 
                     <div className='service-card'>
-                        <img ></img>
+                        <img src={post_surgery_image} alt="Post-Surgery Care"></img>
                         <h3> Post-Surgery Care</h3>
                     </div>
 
                     <div className='service-card'>
-                        <img src={facial_image}></img>
+                        <img src={facial_image} alt="Facial"></img>
                         <h3> Facial</h3>
                     </div>
 
                     <div className='service-card'>
-                        <img src={massage_image}></img> 
+                        <img src={massage_image} alt="Massage"></img> 
                         <h3> Massage</h3>
                     </div>   
 
