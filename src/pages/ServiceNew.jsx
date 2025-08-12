@@ -53,19 +53,19 @@ export default function Service() {
 
                     
                     <div className='service-card'>
-                        <img src={scrub_image} alt="Body Scrub"></img>
+                        <img src={scrub_image} alt="Body Scrub" loading="lazy"></img>
                         <h3> Body Scrub</h3>
                     </div>
 
 
                     <div className='service-card'>
-                        <img src={body_wraps_image} alt="Body Wraps"></img>
+                        <img src={body_wraps_image} alt="Body Wraps" loading="lazy"></img>
                         <h3> Body Wraps</h3>
                     </div>
 
 
                     <div className='service-card'>
-                        <img src={head_spa_image} alt="Head Spa"></img> 
+                        <img src={head_spa_image} alt="Head Spa" loading="lazy"></img> 
                         <h3> Head Spa</h3>
                     </div>   
 
@@ -77,17 +77,17 @@ export default function Service() {
                 <div className='services-row'>
 
                     <div className='service-card'>
-                        <img src={post_surgery_image} alt="Post-Surgery Care"></img>
+                        <img src={post_surgery_image} alt="Post-Surgery Care" loading="lazy"></img>
                         <h3> Post-Surgery Care</h3>
                     </div>
 
                     <div className='service-card'>
-                        <img src={facial_image} alt="Facial"></img>
+                        <img src={facial_image} alt="Facial" loading="lazy"></img>
                         <h3> Facial</h3>
                     </div>
 
                     <div className='service-card'>
-                        <img src={massage_image} alt="Massage"></img> 
+                        <img src={massage_image} alt="Massage" loading="lazy"></img> 
                         <h3> Massage</h3>
                     </div>   
 
