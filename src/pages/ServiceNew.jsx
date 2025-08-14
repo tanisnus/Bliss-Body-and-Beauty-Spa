@@ -86,10 +86,7 @@ export default function Service() {
                         <h3> Facial</h3>
                     </div>
 
-                    <div className='service-card'>
-                        <img src={massage_image} alt="Massage" loading="lazy"></img> 
-                        <h3> Massage</h3>
-                    </div>   
+                  
 
 
                 </div>
