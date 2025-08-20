@@ -3,8 +3,11 @@ import './ServiceNew.css'
 
 
 import scrub_image from '../images/body-scrub.jpg'
+
+
 import body_wraps_image from '../images/body-wrap.jpg'
-import head_spa_image from '../images/head-spa.jpg'
+import wood_therapy_image from '../images/wood-therapy.jpg'
+// import head_spa_image from '../images/head-spa.jpg'
 
 import post_surgery_image from '../images/post-surgery.jpg'
 import facial_image from '../images/facial.jpg'
@@ -13,6 +16,7 @@ import facial_image from '../images/facial.jpg'
 import spaLogo from '../images/Spa_Logo.png'
 
 export default function Service() {
+
     const [expandedService, setExpandedService] = useState(null);
 
     const toggleService = (serviceId) => {
@@ -56,7 +60,8 @@ export default function Service() {
                 {/* Row 1 */}
                 <div className='services-row'>
 
-                    
+                    {/* 1st Service - Body Scrub */}
+
                     <div className='service-card'>
                         <img src={scrub_image} alt="Body Scrub" loading="lazy"></img>
                         <h3> Body Scrub</h3>
@@ -91,6 +96,9 @@ export default function Service() {
                         )}
                     </div>
 
+
+
+                    {/* 2nd Service - Body Wraps */}
 
                     <div className='service-card'>
                         <img src={body_wraps_image} alt="Body Wraps" loading="lazy"></img>
@@ -127,18 +135,20 @@ export default function Service() {
                     </div>
 
 
+                    {/* 3rd Service - Body Sculpting */}
+                    
                     <div className='service-card'>
-                        <img src={head_spa_image} alt="Head Spa" loading="lazy"></img> 
-                        <h3> Head Spa</h3>
-                        <button className='learn-more-btn' onClick={() => toggleService('head-spa')}>
-                            {expandedService === 'head-spa' ? 'Read Less' : 'Learn More'}
+                        <img src={wood_therapy_image} alt="Body Sculpting" loading="lazy"></img> 
+                        <h3> Wood Therapy</h3>
+                        <button className='learn-more-btn' onClick={() => toggleService('body-sculpting')}>
+                            {expandedService === 'body-sculpting' ? 'Read Less' : 'Learn More'}
                         </button>
-                        {expandedService === 'head-spa' && (
+                        {expandedService === 'body-sculpting' && (
                             <div className='service-details'>
-                                <button className='close-details-btn' onClick={() => toggleService('head-spa')}>×</button>
+                                <button className='close-details-btn' onClick={() => toggleService('body-sculpting')}>×</button>
                                 <div className='detail-item'>
                                     <h4>Description</h4>
-                                    <p>Complete scalp and hair treatment that includes deep cleansing, massage, and conditioning. Perfect for stress relief and hair health.</p>
+                                    <p>Wood therapy is a specialized massage technique that uses sculpted wooden tools to help contour your body, stimulate circulation, and smooth the skin — offering a natural, relaxing approach to body sculpting.</p>
                                 </div>
                                 <div className='detail-item'>
                                     <h4>Duration</h4>
@@ -151,18 +161,20 @@ export default function Service() {
                                 <div className='detail-item'>
                                     <h4>Benefits</h4>
                                     <ul>
-                                        <li>Relieves scalp tension</li>
-                                        <li>Promotes hair growth</li>
-                                        <li>Reduces stress and anxiety</li>
-                                        <li>Improves hair texture</li>
+                                        <li>Naturally contour and shape your body</li>
+                                        <li>Stimulate blood and lymphatic circulation</li>
+                                        <li>Reduce the look of cellulite</li>
+                                        <li>Relieve muscle tension and promote relaxation</li>
                                     </ul>
                                 </div>
                             </div>
                         )}
                     </div>   
 
-                </div>
 
+
+                </div>
+                {/* End of Row 1 */}
 
 
                 {/* Row 2 */}
