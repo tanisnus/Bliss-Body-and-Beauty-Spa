@@ -139,7 +139,7 @@ export default function Service() {
                     
                     <div className='service-card'>
                         <img src={wood_therapy_image} alt="Body Sculpting" loading="lazy"></img> 
-                        <h3> Wood Therapy</h3>
+                        <h3>Wood Therapy<br />Body Sculpting</h3>
                         <button className='learn-more-btn' onClick={() => toggleService('body-sculpting')}>
                             {expandedService === 'body-sculpting' ? 'Read Less' : 'Learn More'}
                         </button>
