@@ -77,12 +77,10 @@ export default function Service() {
                                 </div>
                                 <div className='detail-item'>
                                     <h4>Duration</h4>
-                                    <p>60 minutes</p>
+                                    <p>60 minutes: $119</p>
+                                    <p>90 minutes: $169</p>
                                 </div>
-                                <div className='detail-item'>
-                                    <h4>Price</h4>
-                                    <p>$85</p>
-                                </div>
+                               
                                 <div className='detail-item'>
                                     <h4>Benefits</h4>
                                     <ul>
@@ -115,12 +113,10 @@ export default function Service() {
                                 </div>
                                 <div className='detail-item'>
                                     <h4>Duration</h4>
-                                    <p>90 minutes</p>
+                                    <p>60 minutes: $99</p>
+                                    <p>90 minutes: $149</p>
                                 </div>
-                                <div className='detail-item'>
-                                    <h4>Price</h4>
-                                    <p>$120</p>
-                                </div>
+                              
                                 <div className='detail-item'>
                                     <h4>Benefits</h4>
                                     <ul>
@@ -152,12 +148,10 @@ export default function Service() {
                                 </div>
                                 <div className='detail-item'>
                                     <h4>Duration</h4>
-                                    <p>75 minutes</p>
+                                    <p>60 minutes: $99</p>
+                                    <p>90 minutes: $149</p>
                                 </div>
-                                <div className='detail-item'>
-                                    <h4>Price</h4>
-                                    <p>$95</p>
-                                </div>
+                                
                                 <div className='detail-item'>
                                     <h4>Benefits</h4>
                                     <ul>
@@ -195,12 +189,9 @@ export default function Service() {
                                 </div>
                                 <div className='detail-item'>
                                     <h4>Duration</h4>
-                                    <p>120 minutes</p>
-                                </div>
-                                <div className='detail-item'>
-                                    <h4>Price</h4>
-                                    <p>$150</p>
-                                </div>
+                                    <p>60 minutes: $99</p>
+                                    <p>90 minutes: $149</p>                                </div>
+                                
                                 <div className='detail-item'>
                                     <h4>Benefits</h4>
                                     <ul>
@@ -229,12 +220,8 @@ export default function Service() {
                                 </div>
                                 <div className='detail-item'>
                                     <h4>Duration</h4>
-                                    <p>75 minutes</p>
-                                </div>
-                                <div className='detail-item'>
-                                    <h4>Price</h4>
-                                    <p>$95</p>
-                                </div>
+                                    <p>60 minutes: $99</p>
+                                    <p>90 minutes: $149</p>                                </div>
                                 <div className='detail-item'>
                                     <h4>Benefits</h4>
                                     <ul>
