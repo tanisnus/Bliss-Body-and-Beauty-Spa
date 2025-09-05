@@ -1,11 +1,195 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: ''
+    });
+
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Here you would typically send the data to your backend
+        console.log('Form submitted:', formData);
+        setIsSubmitted(true);
+        // Reset form after 3 seconds
+        setTimeout(() => {
+            setIsSubmitted(false);
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                service: '',
+                message: ''
+            });
+        }, 3000);
+    };
+
     return (
-        <div className='contact-div'>
-            <h1>Contact</h1>
+        <div className='contact-container'>
+            {/* Hero Section */}
+            <div className='contact-hero'>
+                <div className='hero-content'>
+                    <h1>Get In Touch</h1>
+                    <p>Ready to begin your wellness journey? We'd love to hear from you.</p>
+                </div>
+            </div>
+
+            {/* Main Contact Content */}
+            <div className='contact-main'>
+                <div className='contact-grid'>
+                    {/* Contact Information */}
+                    <div className='contact-info'>
+                        <h2>Contact Information</h2>
+                        
+                        <div className='info-item'>
+                            <div className='info-icon'>📍</div>
+                            <div className='info-content'>
+                                <h3>Visit Us</h3>
+                                <p>123 Wellness Street<br />Beauty District, BD 12345</p>
+                            </div>
+                        </div>
+
+                        <div className='info-item'>
+                            <div className='info-icon'>📞</div>
+                            <div className='info-content'>
+                                <h3>Call Us</h3>
+                                <p>(415) 650-8976</p>
+                            </div>
+                        </div>
+
+                        <div className='info-item'>
+                            <div className='info-icon'>✉️</div>
+                            <div className='info-content'>
+                                <h3>Email Us</h3>
+                                <p>hello@blissbeautyspa.com</p>
+                            </div>
+                        </div>
+
+                        <div className='info-item'>
+                            <div className='info-icon'>🕒</div>
+                            <div className='info-content'>
+                                <h3>Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 7:00 PM<br />
+                                Saturday: 9:00 AM - 5:00 PM<br />
+                                Sunday: 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Contact Form */}
+                    <div className='contact-form-section'>
+                        <h2>Send Us a Message</h2>
+                        {isSubmitted ? (
+                            <div className='success-message'>
+                                <h3>Thank You!</h3>
+                                <p>Your message has been sent successfully. We'll get back to you soon!</p>
+                            </div>
+                        ) : (
+                            <form className='contact-form' onSubmit={handleSubmit}>
+                                <div className='form-group'>
+                                    <label htmlFor='name'>Full Name *</label>
+                                    <input
+                                        type='text'
+                                        id='name'
+                                        name='name'
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
+                                        placeholder='Enter your full name'
+                                    />
+                                </div>
+
+                                <div className='form-group'>
+                                    <label htmlFor='email'>Email Address *</label>
+                                    <input
+                                        type='email'
+                                        id='email'
+                                        name='email'
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
+                                        placeholder='Enter your email address'
+                                    />
+                                </div>
+
+                                <div className='form-group'>
+                                    <label htmlFor='phone'>Phone Number</label>
+                                    <input
+                                        type='tel'
+                                        id='phone'
+                                        name='phone'
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        placeholder='Enter your phone number'
+                                    />
+                                </div>
+
+                                <div className='form-group'>
+                                    <label htmlFor='service'>Service Interest</label>
+                                    <select
+                                        id='service'
+                                        name='service'
+                                        value={formData.service}
+                                        onChange={handleChange}
+                                    >
+                                        <option value=''>Select a service</option>
+                                        <option value='body-scrub'>Body Scrub</option>
+                                        <option value='body-wraps'>Body Wraps</option>
+                                        <option value='wood-therapy'>Wood Therapy</option>
+                                        <option value='post-surgery'>Post-Surgery Care</option>
+                                        <option value='facial'>Facial</option>
+                                        <option value='massage'>Massage</option>
+                                        <option value='consultation'>Consultation</option>
+                                    </select>
+                                </div>
+
+                                <div className='form-group'>
+                                    <label htmlFor='message'>Message *</label>
+                                    <textarea
+                                        id='message'
+                                        name='message'
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        required
+                                        rows='5'
+                                        placeholder='Tell us about your wellness goals or any questions you have...'
+                                    ></textarea>
+                                </div>
+
+                                <button type='submit' className='submit-btn'>
+                                    Send Message
+                                </button>
+                            </form>
+                        )}
+                    </div>
+                </div>
+
+                {/* Map Section */}
+                <div className='map-section'>
+                    <h2>Find Us</h2>
+                    <div className='map-placeholder'>
+                        <div className='map-content'>
+                            <div className='map-icon'>🗺️</div>
+                            <h3>Interactive Map</h3>
+                            <p>123 Wellness Street, Beauty District, BD 12345</p>
+                            <button className='directions-btn'>Get Directions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
-
 }
