@@ -96,6 +96,10 @@
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     margin-bottom: 20px;
+    /* Image optimization */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    will-change: transform;
 }
 
 .service-card:hover img {
