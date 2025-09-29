@@ -58,15 +58,28 @@ export default function Contact() {
                             <div className='info-icon'>📍</div>
                             <div className='info-content'>
                                 <h3>Visit Us</h3>
-                                <p>123 Wellness Street<br />Beauty District, BD 12345</p>
+                                <p>
+                                    1563 Westwood Blvd, Los Angeles, CA 91605
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className='info-item'>
+                            <div className='info-icon'>💬</div>
+                            <div className='info-content'>
+                                <h3>Social Media</h3>
+                                <p>Instagram: @bliss_westwood</p>
+                                <a href="https://www.instagram.com/bliss_westwood/" target="_blank" rel="noopener noreferrer" className="info-link">
+                                    👉 Click to visit our Instagram page
+                                </a>
                             </div>
                         </div>
 
                         <div className='info-item'>
                             <div className='info-icon'>📞</div>
                             <div className='info-content'>
-                                <h3>Call Us</h3>
-                                <p>(415) 650-8976</p>
+                                <h3>Call or Text Us</h3>
+                                <p>(310) 351-1863</p>
                             </div>
                         </div>
 
@@ -74,7 +87,7 @@ export default function Contact() {
                             <div className='info-icon'>✉️</div>
                             <div className='info-content'>
                                 <h3>Email Us</h3>
-                                <p>hello@blissbeautyspa.com</p>
+                                <p>blissbodyandbeautyspa@gmail.com</p>
                             </div>
                         </div>
 
@@ -82,9 +95,9 @@ export default function Contact() {
                             <div className='info-icon'>🕒</div>
                             <div className='info-content'>
                                 <h3>Hours</h3>
-                                <p>Monday - Friday: 9:00 AM - 7:00 PM<br />
-                                Saturday: 9:00 AM - 5:00 PM<br />
-                                Sunday: 10:00 AM - 4:00 PM</p>
+                                <p>
+                                    Monday - Sunday: 10:00 AM - 9:00 PM   
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -148,10 +161,9 @@ export default function Contact() {
                                         <option value=''>Select a service</option>
                                         <option value='body-scrub'>Body Scrub</option>
                                         <option value='body-wraps'>Body Wraps</option>
-                                        <option value='wood-therapy'>Wood Therapy</option>
+                                        <option value='wood-therapy'>Wood Therapy Body Sculpting</option>
                                         <option value='post-surgery'>Post-Surgery Care</option>
                                         <option value='facial'>Facial</option>
-                                        <option value='massage'>Massage</option>
                                         <option value='consultation'>Consultation</option>
                                     </select>
                                 </div>
@@ -184,8 +196,15 @@ export default function Contact() {
                         <div className='map-content'>
                             <div className='map-icon'>🗺️</div>
                             <h3>Interactive Map</h3>
-                            <p>123 Wellness Street, Beauty District, BD 12345</p>
-                            <button className='directions-btn'>Get Directions</button>
+                            <p>📍 1563 Westwood Blvd, Los Angeles, CA 91605</p>
+                            <a 
+                                href="https://www.google.com/maps/dir/?api=1&destination=1563+Westwood+Blvd,+Los+Angeles,+CA+91605" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className='directions-btn'
+                            >
+                                👉 Get Directions
+                            </a>
                         </div>
                     </div>
                 </div>
