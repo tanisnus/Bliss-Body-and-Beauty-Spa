@@ -63,7 +63,7 @@ export default function Service() {
                     {/* 1st Service - Body Scrub */}
 
                     <div className='service-card'>
-                        <img src={scrub_image} alt="Body Scrub" loading="lazy"></img>
+                        <img src={scrub_image} alt="Body Scrub" loading="lazy" decoding="async"></img>
                         <h3> Body Scrub</h3>
                         <button className='learn-more-btn' onClick={() => toggleService('body-scrub')}>
                             {expandedService === 'body-scrub' ? 'Read Less' : 'Learn More'}
@@ -99,7 +99,7 @@ export default function Service() {
                     {/* 2nd Service - Body Wraps */}
 
                     <div className='service-card'>
-                        <img src={body_wraps_image} alt="Body Wraps" loading="lazy"></img>
+                        <img src={body_wraps_image} alt="Body Wraps" loading="lazy" decoding="async"></img>
                         <h3> Body Wraps</h3>
                         <button className='learn-more-btn' onClick={() => toggleService('body-wraps')}>
                             {expandedService === 'body-wraps' ? 'Read Less' : 'Learn More'}
@@ -134,7 +134,7 @@ export default function Service() {
                     {/* 3rd Service - Body Sculpting */}
                     
                     <div className='service-card'>
-                        <img src={wood_therapy_image} alt="Body Sculpting" loading="lazy"></img> 
+                        <img src={wood_therapy_image} alt="Body Sculpting" loading="lazy" decoding="async"></img> 
                         <h3>Wood Therapy<br />Body Sculpting</h3>
                         <button className='learn-more-btn' onClick={() => toggleService('body-sculpting')}>
                             {expandedService === 'body-sculpting' ? 'Read Less' : 'Learn More'}
@@ -175,7 +175,7 @@ export default function Service() {
                 <div className='services-row'>
 
                     <div className='service-card'>
-                        <img src={post_surgery_image} alt="Post-Surgery Care" loading="lazy"></img>
+                        <img src={post_surgery_image} alt="Post-Surgery Care" loading="lazy" decoding="async"></img>
                         <h3> Post-Surgery Care</h3>
                         <button className='learn-more-btn' onClick={() => toggleService('post-surgery')}>
                             {expandedService === 'post-surgery' ? 'Read Less' : 'Learn More'}
@@ -206,7 +206,7 @@ export default function Service() {
                     </div>
 
                     <div className='service-card'>
-                        <img src={facial_image} alt="Facial" loading="lazy"></img>
+                        <img src={facial_image} alt="Facial" loading="lazy" decoding="async"></img>
                         <h3> Facial</h3>
                         <button className='learn-more-btn' onClick={() => toggleService('facial')}>
                             {expandedService === 'facial' ? 'Read Less' : 'Learn More'}

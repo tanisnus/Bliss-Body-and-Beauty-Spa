@@ -10,9 +10,9 @@ export default function Header() {
 
         <nav className='header-section'> 
             
-            <div className='logo-div-top-left'>
+            {/* <div className='logo-div-top-left'>
                 <img className='logo-img' src={Spa_Logo} alt='Spa_Logo' />
-            </div>
+            </div> */}
 
             <ul className='header-list'>
                 <li className='header-list-item'>

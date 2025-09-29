@@ -112,6 +112,40 @@
     margin: 0;
 }
 
+.info-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.info-link:hover {
+    transform: translateY(-2px);
+}
+
+.info-link:hover .info-item {
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+/* Styling for links inside info content */
+.info-content .info-link {
+    color: #7a4a85;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.info-content .info-link:hover {
+    color: #7a4a85;
+    border-bottom: 1px solid #e45bb9;
+    /* 42d92a */
+    transform: translateY(-1px);
+}
+
 /* Contact Form */
 .contact-form-section {
     background: white;
@@ -292,6 +326,8 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .directions-btn:hover {
