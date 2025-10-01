@@ -189,8 +189,8 @@ export default function Service() {
                                 </div>
                                 <div className='detail-item'>
                                     <h4>Duration</h4>
-                                    <p>60 minutes: $99</p>
-                                    <p>90 minutes: $149</p>                                </div>
+                                    <p>60 minutes: $120</p>
+                                    <p>90 minutes: $180</p>                                </div>
                                 
                                 <div className='detail-item'>
                                     <h4>Benefits</h4>
