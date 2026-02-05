@@ -19,9 +19,6 @@ export default function Header() {
                     <Link className='header-each-link' to='/service'> Services</Link>
                 </li>
 
-                <li className='header-list-item'>
-                    <Link className='header-each-link'> About Us</Link>
-                </li>
 
                 <li className='header-list-item'>
                     <Link className='header-each-link' to='/contact'> Contact</Link>
