@@ -205,6 +205,8 @@ export default function Service() {
                         )}
                     </div>
 
+
+                    {/* 5th Service - Facial */}
                     <div className='service-card'>
                         <img src={facial_image} alt="Facial" loading="lazy" decoding="async"></img>
                         <h3> Facial</h3>
@@ -220,8 +222,18 @@ export default function Service() {
                                 </div>
                                 <div className='detail-item'>
                                     <h4>Duration</h4>
-                                    <p>60 minutes: $99</p>
-                                    <p>90 minutes: $149</p>                                </div>
+                                    <p>60 Minutes Signature Facial: $125</p>
+                                    <p>60 Minutes Back Facial: $145</p>  
+                                    <p>60 Minutes Booty Facial: $145 </p>
+                                    <p>60 Minutes Combo Back and Booty Facial: $195</p>  
+                                    <p>&nbsp;</p>
+                                    <p>Add ons </p>
+                                    <p> - LED Light Therapy: $35</p> 
+                                    <p> - Deep Pore Cleaning + Acne Extraction: $35</p>
+                                    <p> - Scalp Massage (15 mins): $35</p>
+                                    <p> - Face, Neck & Shoulder Massage (15 mins): $45</p>
+
+                                </div>
                                 <div className='detail-item'>
                                     <h4>Benefits</h4>
                                     <ul>
