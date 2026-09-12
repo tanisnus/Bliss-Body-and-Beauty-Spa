@@ -62,7 +62,7 @@ export async function onRequestPost(context) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'Bliss Body and Beauty Spa <send@.blissbodyandbeautyspa.com>',
+      from: 'Bliss Body and Beauty Spa <hello@send.blissbodyandbeautyspa.com>',
       to: [to],
       reply_to: email,
       subject: `New website message from ${name}`,
