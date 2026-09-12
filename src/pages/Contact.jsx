@@ -7,10 +7,13 @@ export default function Contact() {
         email: '',
         phone: '',
         service: '',
-        message: ''
+        message: '',
+        website: '',
     });
 
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitError, setSubmitError] = useState('');
 
     const handleChange = (e) => {
         setFormData({
@@ -19,22 +22,38 @@ export default function Contact() {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Here you would typically send the data to your backend
-        console.log('Form submitted:', formData);
-        setIsSubmitted(true);
-        // Reset form after 3 seconds
-        setTimeout(() => {
-            setIsSubmitted(false);
+        setSubmitError('');
+        setIsSubmitting(true);
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json().catch(() => ({}));
+
+            if (!response.ok) {
+                throw new Error(result.error || 'Could not send your message.');
+            }
+
+            setIsSubmitted(true);
             setFormData({
                 name: '',
                 email: '',
                 phone: '',
                 service: '',
-                message: ''
+                message: '',
+                website: '',
             });
-        }, 3000);
+        } catch (error) {
+            setSubmitError(error.message || 'Could not send your message. Please try again.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -112,6 +131,19 @@ export default function Contact() {
                             </div>
                         ) : (
                             <form className='contact-form' onSubmit={handleSubmit}>
+                                <div className='honeypot' aria-hidden='true'>
+                                    <label htmlFor='website'>Website</label>
+                                    <input
+                                        type='text'
+                                        id='website'
+                                        name='website'
+                                        tabIndex={-1}
+                                        autoComplete='off'
+                                        value={formData.website || ''}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+
                                 <div className='form-group'>
                                     <label htmlFor='name'>Full Name *</label>
                                     <input
@@ -181,8 +213,12 @@ export default function Contact() {
                                     ></textarea>
                                 </div>
 
-                                <button type='submit' className='submit-btn'>
-                                    Send Message
+                                {submitError ? (
+                                    <p className='form-error' role='alert'>{submitError}</p>
+                                ) : null}
+
+                                <button type='submit' className='submit-btn' disabled={isSubmitting}>
+                                    {isSubmitting ? 'Sending…' : 'Send Message'}
                                 </button>
                             </form>
                         )}
