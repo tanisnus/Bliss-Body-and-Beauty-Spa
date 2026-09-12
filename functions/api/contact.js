@@ -52,7 +52,7 @@ export async function onRequestPost(context) {
     return json(400, { error: 'Please check your details and try again.' })
   }
 
-  const to = context.env.CONTACT_TO_EMAIL || 'blissbodyandbeautyspa@gmail.com'
+  const to = context.env.CONTACT_TO_EMAIL || 'tanisgpp@gmail.com'
   const serviceLabel = SERVICE_LABELS[service] || service || 'Not specified'
 
   const resendResponse = await fetch('https://api.resend.com/emails', {
@@ -62,7 +62,7 @@ export async function onRequestPost(context) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'Bliss Body and Beauty Spa <onboarding@resend.dev>',
+      from: 'Bliss Body and Beauty Spa <send@.blissbodyandbeautyspa.com>',
       to: [to],
       reply_to: email,
       subject: `New website message from ${name}`,
